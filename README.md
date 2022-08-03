@@ -2,6 +2,8 @@ Hi! I'm KailHet.
 
 I'm Discord bots developer.
 
+![KailHet's GitHub stats](https://github-readme-stats.vercel.app/api?username=kailHet&theme=dark&show_icons=true)
+
 ## Experience:
 Moderator of DBM Russia 2022-
 
@@ -25,4 +27,3 @@ Streamer on Twitch 2019
 
 ![Discord](https://user-images.githubusercontent.com/71993307/182714597-8d144eb5-74c6-4e61-88d1-447b09c2035f.png) [Discord](https://discord.com/users/344482543632121856)
 
-![KailHet's GitHub stats](https://github-readme-stats.vercel.app/api?username=kailHet&theme=dark&show_icons=true)
