@@ -14,11 +14,12 @@
     bottom: 0;
     right: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background: url(https://media.discordapp.net/attachments/1050764412639793242/1056695295544676363/409667.jpg);
     z-index: 3;
-    background-size: cover;
+    background-size: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .preloader-content {
@@ -100,14 +101,19 @@
     font-weight: 400;
     src: local('Cognac Rum'), url('../font/CognacC.woff') format('woff');
 }
-.content-logo img {opacity: .8;}
+.content-logo img {
+    opacity: .8;
+    width: auto;
+}
 
 .content-text {
     margin: 25px 0;
     font-size: 40px;
     user-select: none;
-    letter-spacing: 35px;
+    letter-spacing: 30px;
     text-shadow: 0 0 20px #ffffff;
+    text-align: center;
+
 }
 
 .content-links {
@@ -167,11 +173,30 @@
 
 @media (max-width: 991px) {
     .content-text {
-        font-size: 30px;
-        letter-spacing: 8.75px;
+        font-size: 26px;
+        letter-spacing: 8.5px;
     }
     .content-logo img {
         opacity: .8; 
         width: 120px;
     }
+    .preloader img {
+        opacity: .8;
+        width: auto
+    };
+}
+
+@media (max-width: 320px) {
+    .content-text {
+        font-size: 26px;
+        letter-spacing: 8.5px;
+    }
+    .content-logo img {
+        opacity: .8; 
+        width: 120px;
+    }
+    .preloader img {
+        opacity: .8;
+        width: auto
+    };
 }
