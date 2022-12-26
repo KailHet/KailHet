@@ -18,7 +18,7 @@
     height: auto;
     background: url(https://media.discordapp.net/attachments/1050764412639793242/1056695295544676363/409667.jpg);
     z-index: 3;
-    background-size: auto;
+    background-size: cover;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
