@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 .preloader {
     position: absolute;
@@ -106,10 +107,9 @@
 	/* color: #FFFFFF; */
 	/* line-height: 14px; */
     /**/
-    font-family: 'CognacRum';
+    font-family: 'Comfortaa', cursive;
     font-style: normal;
     font-weight: 400;
-    src: local('Comfortaa'), url('../font/Comfortaa.woff') format('woff');
 }
 .content-logo img {
     opacity: .8;
