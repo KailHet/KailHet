@@ -118,12 +118,11 @@
 
 .content-text {
     margin: 25px 0;
-    font-size: 40px;
+    font-size: 50px;
     user-select: none;
     letter-spacing: 30px;
-    text-shadow: 0 0 20px blueviolet;
+    text-shadow: 0 0 30px blueviolet;
     text-align: center;
-
 }
 
 .content-links {
@@ -131,33 +130,48 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 0 30px 0 0;
+    padding: 0 40px 10px 0;
 }
 
-.content-links a {
-    color: rgb(135, 70, 196);
-    text-decoration: none;
-    transition: .3s;
-    display: flex;
-    margin: 0 20px 0 0;
-    text-shadow: 0 0 20px blueviolet;
-    user-select: none;
-}
+button {
+    --green: #721bfd;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    margin-left: 20px;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(170, 27, 253, 0.1) 1%, transparent 40%,transparent 60% , rgba(234, 27, 253, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(163, 27, 253, 0.4), 0 0 9px 3px rgba(163, 27, 253, 0.1);
+   }
+   
+   button:hover {
+    color: #721bfd;
+    box-shadow: inset 0 0 10px rgba(163, 27, 253, 0.6), 0 0 9px 3px rgba(163, 27, 253, 0.2);
+   }
+   
+   button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(163, 27, 253, 0.1) 40%,rgba(163, 27, 253, 0.1) 60% , transparent 100%);
+   }
+   
+   button:hover:before {
+    transform: translateX(15em);
+   }
 
-.content-links a:last-child {margin: 0;}
 
-.content-links a i {
-    margin: 0 5px 0 0;
-    justify-self: center;
-    align-self: center;
-}
-
-.content-links a svg {
-    margin: 0 5px 0 0;
-    justify-self: center;
-    align-self: center;
-}
-.content-links a:hover {text-shadow: 0 0 20px #ff0000;}
 
 @media (min-aspect-ratio: 16/9) {
     .main_container_video iframe {
