@@ -1,4 +1,4 @@
-Hi! I'm KailHet. 
+Hi! I'm Ernest (aka KailHet). 
 
 I'm Discord & Telegram bots developer.
 
