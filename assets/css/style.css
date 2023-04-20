@@ -9,6 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
+body {
+    background-image: url(https://media.discordapp.net/attachments/1063748154400452690/1098609300357779546/41565-night.jpg?width=1232&height=700);
+    background-size: cover;
+}
+
 .preloader {
     position: absolute;
     top: 0;
@@ -88,6 +93,35 @@
     height: auto;
 }
 
+/* .portfolioButton {
+    align-items: bottom;
+} */
+
+.portfolioPanel {
+    display: none;
+    color: gray;
+    height: auto;
+    width: auto;
+    border: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    z-index: 2;
+    color: #cb84ff;
+	background-color: rgba(0, 0, 0, 0.8);
+	padding: 0 0 10px 15px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-style: normal;
+    font-weight: 400;
+}
+
 .content {
     position: absolute;
     top: 50%;
@@ -157,6 +191,12 @@ button:hover {
     border: 2px solid #721bfd
 }
    
+button:active {
+    color: #cb84ff;
+    border: 2px solid #cb84ff;
+    box-shadow: inset 0 0 10px #cb84ff, 0 0 9px 3px #cb84ff;
+}
+
 button:before {
     content: "";
     position: absolute;
