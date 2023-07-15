@@ -40,23 +40,3 @@ function preloaderAnim() {
         player.playVideo();
     };
 };
-
-document.getElementById('portfolio').addEventListener('click', openMenu);
-function openMenu() {
-    panel = document.querySelector(".portfolioPanel")
-    panel.style.display = "block"
-
-    container = document.querySelector(".container")
-    container.style.display = "none"
-    // element.scrollIntoView(true);
-}
-
-document.getElementById('back').addEventListener('click', closeMenu);
-function closeMenu() {
-    panel = document.querySelector(".portfolioPanel")
-    panel.style.display = "none"
-
-    container = document.querySelector(".container")
-    container.style.display = "block"
-    // element.scrollIntoView(true);
-}
