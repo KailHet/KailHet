@@ -1,0 +1,63 @@
+/* ==================== */
+/* Компоненты интерфейса */
+/* ==================== */
+.avatar {
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--purple);
+    backdrop-filter: blur(5px);
+}
+
+.nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.nav-link:hover {
+    background: var(--purple) !important;
+    transform: translateX(10px);
+}
+
+.tech-card {
+    background: rgba(50, 50, 50, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    background: rgba(70, 70, 70, 0.4);
+}
+
+.project-card {
+    background: rgba(40, 40, 40, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(107, 70, 193, 0.2);
+}
+
+.stat-card {
+    transition: all 0.3s ease;
+    background: rgba(40, 40, 40, 0.9) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn-purple {
+    background: var(--purple);
+    color: white;
+    border: none;
+}
+
+.btn-purple:hover {
+    background: #6c42b5;
+}

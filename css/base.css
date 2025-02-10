@@ -1,0 +1,22 @@
+/* ==================== */
+/* Базовые стили */
+/* ==================== */
+
+:root {
+    --purple: #6b46c1;
+    --dark-purple: #553c9a;
+    --dark-bg: #0f0f0f;
+}
+
+body {
+    background: var(--dark-bg);
+    color: white;
+    min-height: 100vh;
+}
+
+.unselectable {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

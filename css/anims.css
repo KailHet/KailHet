@@ -1,0 +1,24 @@
+/* ==================== */
+/* Секции и анимации */
+/* ==================== */
+#about {
+    box-shadow: 0 8px 32px rgba(107, 70, 193, 0.1);
+    animation: fadeIn 0.6s ease;
+}
+
+#projects {
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.project-card:nth-child(odd) { animation-delay: 0.2s; }
+.project-card:nth-child(even) { animation-delay: 0.4s; }

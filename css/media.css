@@ -1,0 +1,30 @@
+/* ==================== */
+/* Медиа-запросы */
+/* ==================== */
+@media (max-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        margin-left: 0;
+    }
+    .mobile-navbar {
+        display: block !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    .fa-3x {
+        font-size: 2em;
+    }
+    .contact-card, .social-card, .map-card {
+        margin-bottom: 1rem;
+    }
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}

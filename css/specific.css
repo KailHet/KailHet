@@ -1,0 +1,30 @@
+/* ==================== */
+/* Специфические стили */
+/* ==================== */
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.bg-gray-800 {
+    background: rgba(40, 40, 40, 0.9) !important;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.contact-card li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.map-card iframe {
+    border-radius: 8px;
+}
+
+.counter {
+    font-family: 'Roboto Mono', monospace;
+    color: #fff;
+}

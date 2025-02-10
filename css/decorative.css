@@ -1,0 +1,48 @@
+/* ==================== */
+/* Декоративные элементы */
+/* ==================== */
+.text-purple {
+    color: var(--purple) !important;
+}
+
+.bg-purple {
+    background: var(--purple) !important;
+}
+
+.hover-text {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.hover-text:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.hover-text:hover {
+    color: #fff !important;
+}
+
+.hover-text:hover:after {
+    width: 100%;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: rgba(255,255,255,0.1) !important;
+    transform: translateY(-3px);
+}
