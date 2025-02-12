@@ -1,0 +1,207 @@
+.section-block {
+    margin-left: 350px;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-block {
+    margin-left: 350px;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+    .about-block {
+        margin-left: 90px;
+        padding: 10px;
+    }
+    .section-block {
+        margin-left: 90px;
+        border-radius: 15px;
+    } 
+    .footer-base {
+        margin-left: 90px; /* Я так сделал блять и оно нихуя работает, каким хуем оно нихуя работает тебя ебать не должно, я сам бля не ебу, если надо - смотри ебучие чертежи */
+    }
+}
+
+
+.project-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(213 213 213 / 5%);
+}
+
+.skill-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    background: rgb(167 167 167 / 5%);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    height: 100%;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgb(213 213 213 / 5%);
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    background: var(--accent-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: 40px;
+    bottom: -30px;
+    width: 2px;
+    background: var(--accent-color);
+}
+
+.border-accent {
+    border-color: var(--accent-color)!important;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section-block {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.row-axuet {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex
+;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+    justify-content: flex-end;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-weight: 400;
+}
+
+.btn {
+    transition: all 0.3s ease;
+    border: 1px solid #ffffff;
+    flex: 1;
+}
+
+.btn-outline-accent {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.btn:hover {
+    border-color: rgb(255 255 255);
+    filter: brightness(1.1);
+
+}
+
+@media (min-resolution: 300dpi), 
+       (-webkit-min-device-pixel-ratio: 2.5) {
+    .project-card {
+        transform: scale(0.95);
+        margin: 5px 0;
+    }
+    
+    .badge {
+        font-size: 0.8em;
+        padding: 0.3em 0.6em;
+    }
+}
+
+.text-accent {
+    color: var(--accent-color) !important;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.exp-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.exp-card:hover {
+    transform: translateY(-3px);
+}
+
+.tech-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.list-unstyled li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-card {
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-dark {
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-dark:hover {
+    background: var(--accent-color) !important;
+    color: white !important;
+}
+
+.footer-base {
+    background: var(--dark-bg);
+    color: white;
+    padding: 4rem 0 2rem;
+    margin-left: 300px; 
+}

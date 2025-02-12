@@ -1,0 +1,88 @@
+/* Базовые стили карточек */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 70%; /* Опционально для ограничения ширины */
+}
+
+.info-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* Стили для иконок */
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+}
+
+/* Заголовки карточек */
+.card-title {
+    position: relative;
+    margin: 0 0 1.5rem 0;
+    padding-left: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.card-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 30px;
+    background: currentColor;
+}
+
+/* Уникальные стили для каждой карточки */
+.about-card {
+    color: #6ab0f3;
+}
+.about-card .card-icon {
+    color: #6ab0f3;
+}
+
+.experience-card {
+    color: #6dd95d;
+}
+.experience-card .card-icon {
+    color: #6dd95d;
+}
+
+.projects-card {
+    color: #c77dff;
+}
+.projects-card .card-icon {
+    color: #c77dff;
+}
+
+/* Контент внутри карточек */
+.card-content p {
+    margin: 0;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .cards-container {
+        /* Убрать grid-template-columns */
+        max-width: 100%; /* Полная ширина на мобильных */
+    }
+    
+    .thin-card {
+        padding: 15px 20px;
+    }
+}

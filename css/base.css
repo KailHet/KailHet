@@ -1,19 +1,36 @@
-/* ==================== */
-/* Базовые стили */
-/* ==================== */
-
 :root {
-    --purple: #6b46c1;
-    --dark-purple: #553c9a;
-    --dark-bg: #0f0f0f;
+    --bg-dark: #040404;
+    --accent-purple: #6f42c1;
+    --text-light: #ffffff;
+    --project-card-width: 300px; /* Контроль ширины карточек */
 }
 
 body {
-    background: var(--dark-bg);
-    color: white;
-    min-height: 100vh;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
 }
 
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+    }
+}
+
+
+#canvas-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 .unselectable {
     -moz-user-select: none;
     -khtml-user-select: none;

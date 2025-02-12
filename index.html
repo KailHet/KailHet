@@ -1,14 +1,461 @@
-<html lang="en">
-    <head>
-        <title>In Development</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/updates.css">
-        <link rel="icon" type=image/png href="images/favicon-32x32.png" sizes="32x32">
-    </head>
-    <body>
-        In Development
-    </body>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KailHet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="dot-canvas"></canvas>
+    </div>
+
+    <nav class="navbar-vertical">
+        <div class="avatar-container">
+            <img src="https://i.pinimg.com/originals/18/90/4b/18904be9d3c326b6046c2c6d2e285c4b.jpg" 
+                 class="avatar" 
+                 alt="KailHet Avatar">
+            <h2 class="username">KailHet</h2>
+        </div>
+        
+        <div class="nav-links">
+            <a class="nav-link" href="#about">
+                <i class="bi bi-person me-3"></i>
+                <span>Обо мне</span>
+                <div class="link-hover"></div>
+            </a>
+            <a class="nav-link" href="#projects">
+                <i class="bi bi-code-square me-3"></i>
+                <span>Проекты</span>
+                <div class="link-hover"></div>
+            </a>
+            
+            <a class="nav-link" href="#experience">
+                <i class="bi bi-briefcase me-3"></i>
+                <span>Опыт</span>
+                <div class="link-hover"></div>
+            </a>
+        </div>
+    </nav>
+
+<!-- Секция "Обо мне" -->
+<section class="about-block" id="about" style="margin-top: 30px;margin-right: 60px;">
+    <div class="row g-4">
+        <!-- Основной текст -->
+        <div class="col-lg-6 mb-4">
+            <h1 class="mb-4" style="color: var(--accent-color);">
+                <i class="bi bi-star-fill me-3" style="color: rgb(106 70 192);"></i>Обо мне
+            </h1>
+            <p class="lead">Full-stack разработчик с 5-летним опытом создания высоконагруженных веб-приложений</p>
+            
+            <div class="d-flex flex-wrap gap-2 mb-4">
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="bi bi-stack me-2" style="color: var(--accent-color);"></i>Full-Stack
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="bi bi-window me-2" style="color: var(--accent-color);"></i>SPA
+                </span>
+                <span class="badge bg-dark px-3 py-2">
+                    <i class="bi bi-plug me-2" style="color: var(--accent-color);"></i>RestAPI
+                </span>
+            </div>
+
+            <div class="mt-3">
+                <p class="small">
+                    <i class="bi bi-arrow-right me-2" style="color: var(--accent-color);"></i>
+                    Full-Stack: Полный цикл разработки от проектирования архитектуры до deployment
+                </p>
+                <p class="small">
+                    <i class="bi bi-arrow-right me-2" style="color: var(--accent-color);"></i>
+                    SPA: Разработка Progressive Web Apps с использованием современных паттернов
+                </p>
+                <p class="small">
+                    <i class="bi bi-arrow-right me-2" style="color: var(--accent-color);"></i>
+                    RestAPI: Проектирование и документирование API с использованием OpenAPI спецификации
+                </p>
+            </div>
+        </div>
+        
+        <!-- Блоки с навыками -->
+        <div class="col-lg-6">
+            <div class="row g-3">
+                <!-- Frontend Pro -->
+                <div class="col-md-6">
+                    <div class="skill-card p-3 rounded">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-code-square fs-3 me-2" style="color: rgb(106 70 192);"></i>
+                            <h5 class="m-0">Frontend Pro</h5>
+                        </div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                React/Next.js
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                TypeScript
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                WebPack
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Backend Expert -->
+                <div class="col-md-6">
+                    <div class="skill-card p-3 rounded">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-server fs-3 me-2" style="color: rgb(106 70 192);;"></i>
+                            <h5 class="m-0">Backend Expert</h5>
+                        </div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                Node.js
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                MongoDB
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                Docker
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Дополнительные навыки -->
+                <div class="col-12">
+                    <div class="skill-card p-3 rounded">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-tools fs-3 me-2" style="color: rgb(106 70 192);"></i>
+                            <h5 class="m-0">Дополнительные навыки</h5>
+                        </div>
+                        <ul class="list-unstyled mb-0">
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                WebSockets
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                UnitTesting
+                            </li>
+                            <li class="d-flex align-items-center mb-2">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                CI/CD
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i class="bi bi-dot me-2" style="color: var(--accent-color);"></i>
+                                Microservices
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-block" id="projects"style="margin-top: 30px;margin-right: 60px;">
+    <h2 class="mb-4" style="color: var(--accent-color);">
+        <i class="bi bi-folder2-open me-3" style="color: rgb(106 70 192);"></i>Мои проекты
+    </h2>
+    
+    <div class="row g-4">
+        <!-- Проект 1 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card p-4 rounded h-100">
+                <h4 class="d-flex align-items-center gap-2">
+                    <i class="bi bi-shop-window"></i>
+                    Интернет-магазин
+                </h4>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-dark">React</span>
+                    <span class="badge bg-dark">Node.js</span>
+                    <span class="badge bg-dark">Stripe</span>
+                    <span class="badge bg-dark">MongoDB</span>
+                </div>
+                <p>Полнофункциональный магазин с системой оплаты и админ-панелью</p>
+                <div class="mt-auto d-flex gap-2">
+                    <a href="#" class="btn btn-sm" style="background-color: var(--accent-color);color: #ffffff;">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Перейти
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card p-4 rounded h-100">
+                <h4 class="d-flex align-items-center gap-2">
+                    <i class="bi bi-chat-dots"></i>
+                    Социальная сеть
+                </h4>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-dark">Vue.js</span>
+                    <span class="badge bg-dark">Firebase</span>
+                    <span class="badge bg-dark">WebSockets</span>
+                    <span class="badge bg-dark">Redis</span>
+                </div>
+                <p>SPA приложение с реальным временем обновления</p>
+                <div class="mt-auto d-flex gap-2">
+                    <a href="#" class="btn btn-sm" style="background-color: var(--accent-color);color: #ffffff;">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Продукт
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Проект 3 -->
+        <div class="col-md-6 col-lg-4">
+            <div class="project-card p-4 rounded h-100">
+                <h4 class="d-flex align-items-center gap-2">
+                    <i class="bi bi-server"></i>
+                    API Сервис
+                </h4>
+                <div class="d-flex flex-wrap gap-2 mb-3">
+                    <span class="badge bg-dark">NestJS</span>
+                    <span class="badge bg-dark">PostgreSQL</span>
+                    <span class="badge bg-dark">Swagger</span>
+                    <span class="badge bg-dark">Docker</span>
+                </div>
+                <p>Масштабируемый REST API с JWT аутентификацией</p>
+                <div class="mt-auto d-flex gap-2">
+                    <a href="#" class="btn btn-sm" style="background-color: var(--accent-color);color: #ffffff;">
+                        <i class="bi bi-box-arrow-up-right me-2"></i>Продукт
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Секция "Опыт" -->
+<section class="section-block" id="experience" style="margin-top: 30px;margin-right: 60px;">
+    <h2 class="mb-4" style="color: var(--accent-color);">
+        <i class="bi bi-pc-display-horizontal me-3" style="color: rgb(106 70 192);"></i>Опыт работы
+    </h2>
+    
+    <div class="row g-4">
+        <!-- Опыт 1 -->
+        <div class="col-12">
+            <div class="exp-card p-4 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                        <h4 class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-code-square"></i>
+                            Senior Frontend Developer
+                        </h4>
+                        <div class="small">Tech Corp • 2021-2023</div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-dark">Team Lead</span>
+                        <span class="badge bg-dark">SPA</span>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h6 class="text-accent mb-3">Основные достижения:</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-check-circle me-2 text-success"></i>
+                                Архитектура приложений на React/Next.js
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-speedometer2 me-2 text-warning"></i>
+                                Оптимизация производительности (Lighthouse 95+)
+                            </li>
+                            <li>
+                                <i class="bi bi-people me-2 text-info"></i>
+                                Руководство командой из 5 разработчиков
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h6 class="text-accent mb-3">Технологический стек:</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="tech-item">
+                                <i class="bi bi-filetype-tsx me-2"></i>
+                                TypeScript
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-lightning-charge me-2"></i>
+                                React 18
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-gem me-2"></i>
+                                Next.js 13
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-box-seam me-2"></i>
+                                Webpack 5
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-bootstrap me-2"></i>
+                                Redux Toolkit
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Опыт 2 -->
+        <div class="col-12">
+            <div class="exp-card p-4 rounded">
+                <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                        <h4 class="d-flex align-items-center gap-2 mb-1">
+                            <i class="bi bi-stack"></i>
+                            Fullstack Developer
+                        </h4>
+                        <div class="small">StartUp Inc • 2019-2021</div>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <span class="badge bg-dark">MVP</span>
+                        <span class="badge bg-dark">CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <h6 class="text-accent mb-3">Ключевые задачи:</h6>
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <i class="bi bi-rocket-takeoff me-2 text-danger"></i>
+                                Полный цикл разработки MVP за 6 месяцев
+                            </li>
+                            <li class="mb-3">
+                                <i class="bi bi-puzzle me-2 text-primary"></i>
+                                Интеграция Stripe и Google Maps API
+                            </li>
+                            <li>
+                                <i class="bi bi-gear-wide-connected me-2 text-success"></i>
+                                Настройка GitLab CI/CD пайплайнов
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h6 class="text-accent mb-3">Используемые технологии:</h6>
+                        <div class="d-flex flex-wrap gap-2">
+                            <div class="tech-item">
+                                <i class="bi bi-filetype-jsx me-2"></i>
+                                React + Node.js
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-database me-2"></i>
+                                MongoDB
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-shield-check me-2"></i>
+                                JWT Auth
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-cloud-arrow-up me-2"></i>
+                                AWS EC2
+                            </div>
+                            <div class="tech-item">
+                                <i class="bi bi-terminal me-2"></i>
+                                Docker
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer mt-5 footer-base">
+    <div class="container">
+        <div class="row g-5">
+            <!-- Контакты -->
+            <div class="col-md-4">
+                <div class="footer-card p-3 rounded">
+                    <h4 class="mb-3">
+                        <i class="bi bi-envelope-at fs-4 me-2" style="color: var(--accent-color);"></i>
+                        Контакты
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2" style="color: var(--accent-color);"></i>
+                            Москва, РФ
+                        </li>
+                        <li>
+                            <i class="bi bi-send me-2" style="color: var(--accent-color);"></i>
+                            example@domain.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Социальные сети -->
+            <div class="col-md-4">
+                <div class="footer-card p-3 rounded">
+                    <h4 class="mb-3">
+                        <i class="bi bi-hash fs-4 me-2" style="color: var(--accent-color);"></i>
+                        Соцсети
+                    </h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-dark btn-sm px-3 py-2">
+                            <i class="bi bi-github me-2" style="color: var(--accent-color);"></i>GitHub
+                        </a>
+                        <a href="#" class="btn btn-dark btn-sm px-3 py-2">
+                            <i class="bi bi-telegram me-2" style="color: var(--accent-color);"></i>Telegram
+                        </a>
+                        <a href="#" class="btn btn-dark btn-sm px-3 py-2">
+                            <i class="bi bi-linkedin me-2" style="color: var(--accent-color);"></i>LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Быстрые ссылки -->
+            <div class="col-md-4">
+                <div class="footer-card p-3 rounded">
+                    <h4 class="mb-3">
+                        <i class="bi bi-link-45deg fs-4 me-2" style="color: var(--accent-color);"></i>
+                        Навигация
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-arrow-right me-2" style="color: var(--accent-color);"></i>
+                            <a href="#about" class="text-white text-decoration-none">Обо мне</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-arrow-right me-2" style="color: var(--accent-color);"></i>
+                            <a href="#projects" class="text-white text-decoration-none">Проекты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Копирайт -->
+        <div class="text-center mt-5 pt-4 border-top border-dark">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <span class="small">© 2025 Все права защищены</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="js/dotwork.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

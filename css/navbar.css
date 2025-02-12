@@ -1,0 +1,111 @@
+.navbar-vertical {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    backdrop-filter: blur(12px);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    z-index: 1000;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-container {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    border-color: #6f42c1;
+}
+
+.username {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    background: rgba(111, 66, 193, 0.15);
+}
+
+.nav-link:hover .link-hover {
+    transform: translateX(0);
+}
+
+.link-hover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background: #6f42c1;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-link i {
+    font-size: 1.2rem;
+    min-width: 30px;
+}
+
+/* Адаптивность для мобилок */
+@media (max-width: 768px) {
+    .navbar-vertical {
+        width: 70px;
+        padding: 1rem 0.5rem;
+    }
+    
+    .avatar {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .username, /* Я так сделал блять и оно нихуя работает, каким хуем оно нихуя работает тебя ебать не должно, я сам бля не ебу, если надо - смотри ебучие чертежи */
+    .nav-link span {
+        display: none;
+    }
+    
+    .nav-link {
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    
+    .nav-link i {
+        margin-right: 0;
+    }
+}
