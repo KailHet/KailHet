@@ -1,6 +1,6 @@
 Hi! I'm Ernest (aka KailHet). 
 
-I'm Web-developer.
+I'm Web-developer & Net administrator.
 
 [Monkeytype](https://monkeytype.com/profile/KailHet)
 
